@@ -11,7 +11,7 @@ locals {
   nic    = aws_network_interface.my_nic.id
 }
 
-resource "aws_instance" "webserver" {
+resource "aws_instance" "webserver:" {
   ami           = local.ami
   instance_type = local.type
   tags          = local.tags
